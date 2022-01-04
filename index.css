@@ -6,6 +6,9 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: #ffffff;
 }
@@ -56,13 +59,20 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  
+  
 }
 .menu-info1 {
   background-color: #342679;
   opacity: 0.8;
-  margin-top: 300px;
-  height: 100vh;
+  /* margin-top: 300px; */
+  height: 60%;
   padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
   
 }
 .p1 {
@@ -71,42 +81,54 @@ body {
   font-style: normal;
   font-weight: bold;
   
- margin-left: 35px;
+ 
  
 }
 .p2 {
   color: #ffffff;
-  width: 660px;
+  width: auto;
   margin: 0px;
   font-size: 15px;
-  margin-left:35px ;
+ 
   margin-bottom: 10px;
 }
 .m2 {
   background-image: url(./img/Bitmap\ \(1\).png);
   background-size: cover;
   overflow: hidden;
+  display: flex;
+  align-items: flex-end;
 }
 .m3 {
   background-image: url(./img/Bitmap\ \(2\).png);
   background-size: cover;
   overflow: hidden;
+  display: flex;
+  align-items: flex-end;
 }
 .m4 {
   background-image: url(./img/Bitmap\ \(3\).png);
   background-size: cover;
+  display: flex;
+  align-items: flex-end;
 }
 .m5 {
   background-image: url(./img/Bitmap\ \(4\).png);
   background-size: cover;
+  display: flex;
+  align-items: flex-end;
 }
 .menu-info2 {
   background-color: #ffffff;
-  margin-top: 140px;
-  height: 150px;
+  /* margin-top: 140px; */
+  height: 60%;
   opacity: 0.8;
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
+  width: 100%;
+  
+  
   
 }
 .p3 {
@@ -119,6 +141,7 @@ font-weight: bold;
 .p4 {
   font-size: 10px;
   margin-top: 5px;
+  width: auto;
 }
 .btn1 {
   color: #ffffff;
@@ -157,7 +180,8 @@ font-weight: bold;
 .chef-review {
   background-image: url(./img/Mask\ Group.png);
   background-size: cover;
-  height: 500px;
+  background-position: center;
+  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -197,6 +221,7 @@ font-weight: bold;
 }
 .chef-a {
   color: white;
+
 }
 .chef-r {
   background-color: white;
@@ -210,10 +235,12 @@ font-weight: bold;
 .guide {
   background-image: url(./img/4th\ Food\ Banner\ 3.png);
   background-size: cover;
-  height: 750px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr  1fr;
 }
 .food {
   width: 100px;
@@ -296,13 +323,14 @@ font-weight: bold;
     height: 2px;
     opacity: 1;
     background-color:white;
-    width: 650px;
+    width: 100%;
 
 }
 .underline2{
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    padding: 0px 0px;
 
 }
 #btn{
@@ -312,27 +340,31 @@ font-weight: bold;
     width: 120px;
 }
 #star{
-    margin-left:450px ;
+    /* margin-left:450px ; */
     width: 20px;
     height: 20px;
 }
 
 .info-btn{
-    padding-right:25px ;
-    padding-left: 35px;
+  padding-top: 50px;
+    /* padding-right:25px ; */
+    /* padding-left: 35px; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     
 }
 #underline3{
-    width: 330px;
+    width: 100%;
     height: 0.5px;
     opacity: 1;
     margin-bottom: 5px;
 }
 #underline4{
-    width: 330px;
+    width: 100%;
     height: 0.5px;
     opacity: 1;
-    margin-top: 35px;
+    margin-top: 50px;
     margin-bottom: 5px;
 }
 #btn2{
@@ -341,10 +373,15 @@ font-weight: bold;
     border-color: transparent;
     padding-left: 0px;
 }
+.info-btn2{
+  
+  display: flex;
+  justify-content: space-between;
+}
 #star2{
     width: 20px;
     height: 20px;
-    margin-left: 190px;
+    /* margin-left: 190px; */
 }
 #rate2{
     width: 30px;
@@ -393,3 +430,164 @@ font-weight: bold;
     display: flex;
     justify-content: center;
 }
+@media (max-width: 1360px) { 
+.country{
+  padding: 0px;
+  display: flex;
+  justify-content:space-evenly ;
+
+ }
+ @media (max-width: 1250px) { 
+.country{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.country-dish{
+  display: flex;
+  justify-content: center;
+}
+.p5{
+  margin-bottom: 30px;
+  line-height: 20px;
+}
+.chef-review{
+  padding: 0px 150px;
+}
+.m1{
+  width:max-content;
+  width: 100%;
+ 
+}
+.menu{
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 225px 225px 300px 300px ;
+
+}
+.menu-info1{
+  width:100%;
+}
+ }
+ @media (max-width: 1100px) {
+   .chef-review{
+     padding: 0px 90px;
+   }
+ }
+ @media (max-width: 924px) {
+  .chef-review{
+    padding: 0px 50px;
+  }
+}
+@media (max-width: 840px) {
+  .chef-review{
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 769px) {
+  .chef-review{
+    padding: 0px 0px;
+  }
+  .guide{
+    
+    display: flex;
+    flex-direction: column;
+    
+    /* grid-template-rows: 500px; */
+   
+  }
+  .grain{
+    grid-row: 2/3;
+  }
+  .table{
+    margin: 0px;
+  }
+  #underline6{
+    margin-bottom: 20px;
+  }
+ 
+}
+@media (max-width: 758px){
+.m1{
+  height: 550px;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  
+
+}
+.m2{
+  height:200px;
+
+}
+.m3{
+  height: 200px;
+}
+.m4{
+  height: 200px;
+}
+.m5{
+  height: 200px;
+}
+
+.chef-review{
+ display: flex;
+ flex-direction: column;
+  
+}
+
+}
+@media (max-width: 696px){
+  .chef-r{
+    
+  }
+  .p7{
+    width: auto;
+    margin: 10px 10px;
+  }
+
+}
+
+@media (max-width: 430px){
+  .p5{
+    width: 300px;
+  }
+  .chef-r{
+    width: 300px;
+
+  }
+  .info-btn{
+    padding: 0px;
+  }
+  .info-btn{
+    padding: 40px 0px;
+  }
+ 
+
+}
+@media (max-width: 345px){
+  .p9{
+    width: auto;
+  }
+  #btn{
+    width: auto;
+  }
+  .m1{
+    height: 580px;
+
+  }
+  .info-btn{
+    padding: 0px;
+  }
+ 
+  
+
+}
+@media (max-width: 321px){
+  .chef-review{
+    height: max-content;
+  }
+}
+
+
